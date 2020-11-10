@@ -1,0 +1,36 @@
+.Temperature h4 {
+  display: inline;
+  font-size: 30px;
+}
+
+.Temperature h4.Hightemp {
+  color: #d7385e;
+}
+
+.Temperature h4.Lowtemp {
+  color: #0278ae;
+}
+.Temperature section.reading {
+  position: relative;
+  top: 130px;
+  right: 30px;
+  text-align: center;
+}
+
+.Temperature .temp-low {
+  top: 30px;
+}
+
+.Temperature i.fa-temperature-high,
+i.fa-temperature-low {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.Temperature i.fa-temperature-low {
+  color: #2dc1d8;
+}
+
+.Temperature i.fa-temperature-high {
+  color: #e0562c;
+}

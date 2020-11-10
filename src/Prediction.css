@@ -1,0 +1,13 @@
+.Prediction span.description {
+  font-size: 16px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.Prediction .predict {
+  font-size: 22px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}

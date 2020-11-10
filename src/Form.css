@@ -1,0 +1,25 @@
+.Form form {
+  margin-top: 22px;
+  margin-left: 12px;
+}
+
+.Form button {
+  position: relative;
+  left: -18px;
+  top: 3px;
+  padding: 6px 9px;
+  background: #2dc1d8;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.Form button.geolocation {
+  left: 10px;
+  top: -33px;
+  background: #306e77;
+}
+
+.Form .fa-search-location {
+  font-size: 20px;
+}

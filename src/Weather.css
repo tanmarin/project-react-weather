@@ -1,0 +1,70 @@
+.Weather h1 {
+  text-align: center;
+  font-size: 110px;
+  font-weight: bolder;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  margin-top: 35px;
+  color: rgb(177, 72, 72);
+}
+
+.Weather h2,
+span.weather-icon {
+  font-size: 140px;
+}
+
+.Weather h2 {
+  position: relative;
+  top: 35px;
+  left: 25px;
+}
+
+.Weather h3 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0 auto;
+  color: #056674;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.Weather h3:first-letter {
+  text-transform: capitalize;
+}
+
+.Weather p.degree {
+  position: relative;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 20px;
+  top: -150px;
+  left: 150px;
+}
+
+.Weather .date-time,
+.current-weather {
+  text-align: center;
+}
+
+.Weather .current-weather {
+  margin-left: 20px;
+}
+
+.Weather span.divided {
+  font-weight: lighter;
+}
+
+.Weather span.weather-icon {
+  position: relative;
+  right: 20px;
+  color: #ffc31f;
+}
+
+.Weather a {
+  color: #44a2c4;
+}
+.Weather a.degree-reading:hover {
+  text-decoration: none;
+  color: #2f46ad;
+}
+.Weather a:hover {
+  color: #058671;
+}

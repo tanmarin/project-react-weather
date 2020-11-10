@@ -1,0 +1,32 @@
+.Forecast h6 {
+  color: #d84251;
+  font-weight: bolder;
+}
+
+.Forecast .forecast-five {
+  border: 1px solid rgba(226, 131, 76, 0.5);
+  border-radius: 10px;
+  background: rgb(245, 184, 155);
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.Forecast .five-days {
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(247, 140, 160, 0.7) 0%,
+    rgb(249, 116, 143, 0.7) 19%,
+    rgb(253, 134, 140, 0.7) 60%,
+    rgb(254, 154, 139, 0.7) 100%
+  );
+  padding-top: 12px;
+  padding-bottom: 15px;
+  border: none;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.Forecast span.five-icon {
+  font-size: 40px;
+  color: white;
+}
