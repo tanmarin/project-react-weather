@@ -14,8 +14,6 @@ export default function Weather() {
     sunset: "18:37"
   };
 
-
-
   return (
     <div className="Weather">
       <div className="location">

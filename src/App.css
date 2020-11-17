@@ -1,3 +1,31 @@
+.App .container {
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 650px;
+  margin-top: 40px;
+  background: linear-gradient(
+    to right,
+    rgba(252, 182, 159, 0.5) 0%,
+    rgba(255, 236, 210, 0.8) 100%
+  );
+}
+
+.App .open-code {
+  margin: 0 auto;
+  max-width: 650px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+.App a {
+  color: #44a2c4;
+}
+
+.App a:hover {
+  color: #058671;
+}
+
 .App h5 {
   color: #d84251;
   font-weight: bolder;
