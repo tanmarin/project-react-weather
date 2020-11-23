@@ -15,7 +15,6 @@ export default function App() {
       <p className="opencode">
       <a
         href="https://github.com/tanmarin/project-react-weather"
-        target="_blank"
         >Open-Source Code </a
       >by Tanmarin
     </p>
