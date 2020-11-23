@@ -11,7 +11,7 @@ export default function Weather(props) {
       <div className="location">
         <h1>{props.data.city}</h1>
         <div className="row date-time">
-          <div className="col-6 timing"> {props.data.sunrise} </div>
+          <div className="col-6 timing"> {props.data.timeee} </div>
           <div className="col-3">
             Sunrise <strong>|</strong> Sunset
           </div>

@@ -14,7 +14,7 @@ export default function Form(props){
   const [city, setCity] = useState(props.defaultCity);
   
   function callData(response) {
-    console.log(response);
+  
     setWeatherData({  
       ready: true, 
       time: new Date(response.data.dt*1000),
