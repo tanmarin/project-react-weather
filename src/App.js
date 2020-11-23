@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Form defaultcity="Tokyo" />
+        <Form defaultCity="Tokyo" />
       </div>
       <p className="opencode">
       <a

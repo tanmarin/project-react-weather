@@ -10,13 +10,13 @@ import Forecast from "./Forecast";
 import "./Form.css";
 
 export default function Form(props){
-  const [loaded, setLoaded] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
-  const [city, setCity] = useState(props.defaultcity);
+  const [weatherData, setWeatherData] = useState({ ready: false});
+  const [city, setCity] = useState(props.defaultCity);
   
   function callData(response) {
-    setLoaded(true);
-    setWeatherData({   
+    setWeatherData({  
+      ready: true, 
+      time: new Date(response.data.dt*1000),
       temperature: Math.round(response.data.main.temp),
       wind: Math.round(response.data.wind.speed),
       humidity: Math.round(response.data.main.humidity),
@@ -47,7 +47,7 @@ export default function Form(props){
     axios.get(apiUrl).then(callData);
   }
 
-  if (loaded) {
+  if (weatherData.ready) {
     return(
         <div className="Form">
       <form onSubmit={handleSearch}>
