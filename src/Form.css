@@ -23,3 +23,15 @@
 .Form .fa-search-location {
   font-size: 20px;
 }
+
+.loading {
+  margin: 0 auto;
+  text-align: center;
+}
+p.loaded {
+  font-size: 36px;
+  color: #267b97;
+  font-weight: 700px;
+  text-align: center;
+  margin-top: 15px;
+}

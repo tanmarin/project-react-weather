@@ -1,3 +1,7 @@
+.App {
+  font-family: "Oswald", sans-serif;
+}
+
 .App .container {
   border: 1px solid red;
   border-radius: 10px;
@@ -11,7 +15,7 @@
   );
 }
 
-.App .open-code {
+.App .opencode {
   margin: 0 auto;
   max-width: 650px;
   margin-top: 10px;

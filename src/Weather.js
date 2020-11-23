@@ -1,7 +1,9 @@
 import React from "react";
 
+import Temperature from "./Temperature";
+
 import "./Weather.css";
-import "./Form.css";
+
 
 
 export default function Weather() {
@@ -52,6 +54,8 @@ export default function Weather() {
         </div>
         <h3>{weatherData.description}</h3>
       </div>
+            <Temperature />
+
     </div>
   );
 }
