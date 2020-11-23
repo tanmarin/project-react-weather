@@ -1,7 +1,7 @@
 import React from "react";
 import "./Temperature.css";
 
-export default function Temperature() {
+export default function Temperature(props) {
   return (
     <div className="Temperature">
       <div className="row">
@@ -11,7 +11,7 @@ export default function Temperature() {
               <section className="reading">
                 <i className="fas fa-temperature-high"></i>
                 <h4 className="Hightemp">
-                  <strong>22</strong>
+                  <strong>{props.high}</strong>
                 </h4>
                 <p>
                   <small>Temperature High</small>
@@ -22,7 +22,7 @@ export default function Temperature() {
               <section className="reading">
                 <i className="fas fa-temperature-low"></i>
                 <h4 className="Lowtemp">
-                  <strong>20</strong>
+                  <strong>{props.low}</strong>
                 </h4>
                 <p>
                   <small>Temperature Low</small>
