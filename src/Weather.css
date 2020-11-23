@@ -24,6 +24,7 @@ span.weather-icon {
   margin: 0 auto;
   color: #056674;
   font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 35px;
 }
 
 .Weather h3:first-letter {
@@ -32,11 +33,11 @@ span.weather-icon {
 
 .Weather p.degree {
   position: relative;
-  font-size: 25px;
-  font-weight: lighter;
   margin-left: 20px;
-  top: -150px;
-  left: 150px;
+  top: -128px;
+  left: 125px;
+  font-size: 22px;
+  font-weight: lighter;
 }
 
 .Weather .date-time,
