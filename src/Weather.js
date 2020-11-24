@@ -32,11 +32,7 @@ export default function Weather(props) {
       <div className="weather">
         <div className="row current-weather">
           <div className="col-6">
-            <div className="clearfix">
-            <div className="float-left">
               <WeatherIcon code={props.data.icon} />
-            </div>
-            </div>
           </div>
           <div className="col-3">
             <UnitChange celsius={props.data.temperature} />

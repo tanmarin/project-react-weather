@@ -62,3 +62,9 @@
 .Weather a:hover {
   color: #058671;
 }
+
+.Weather canvas {
+  margin: 0 auto;
+  margin-top: 58px;
+  display: block;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon";
+import ForecastIcon from "./ForecastIcon";
 
 import "./Forecast.css";
 
@@ -20,7 +20,7 @@ export default function Forecast(props) {
   <div className="col-2 forecast-five">
             <h6>{hours()}</h6>
             <span className="five-icon">
-            <WeatherIcon code={props.data.weather[0].icon} />
+            <ForecastIcon code={props.data.weather[0].icon} />
           </span>
             <p >
             {temperature()}
