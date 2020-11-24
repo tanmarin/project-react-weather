@@ -3,6 +3,8 @@ import React from "react";
 import Temperature from "./Temperature";
 import FormattedDate from "./FormattedDate";
 import SunTime from "./SunTime";
+import WeatherIcon from "./WeatherIcon";
+
 import "./Weather.css";
 
 
@@ -29,9 +31,11 @@ export default function Weather(props) {
       <div className="weather">
         <div className="row current-weather">
           <div className="col-6">
-            <span className="weather-icon">
-             <img src={props.data.icon} alt={props.data.description} />
-            </span>
+            <div className="clearfix">
+            <div className="float-left">
+              <WeatherIcon code={props.data.icon} />
+            </div>
+            </div>
           </div>
           <div className="col-3">
             <h2 className="current-temp">{props.data.temperature}</h2>
