@@ -18,6 +18,8 @@ export default function Form(props){
     setWeatherData({  
       ready: true, 
       time: new Date(response.data.dt*1000),
+      sunrise: new Date(response.data.sys.sunrise*1000),
+      sunset: new Date(response.data.sys.sunset*1000),
       temperature: Math.round(response.data.main.temp),
       wind: Math.round(response.data.wind.speed),
       humidity: Math.round(response.data.main.humidity),

@@ -1,6 +1,8 @@
 import React from "react";
 
 import Temperature from "./Temperature";
+import FormattedDate from "./FormattedDate";
+import SunTime from "./SunTime";
 import "./Weather.css";
 
 
@@ -11,14 +13,16 @@ export default function Weather(props) {
       <div className="location">
         <h1>{props.data.city}</h1>
         <div className="row date-time">
-          <div className="col-6 timing"> {props.data.timeee} </div>
+          <div className="col-6 timing"> 
+          <FormattedDate date={props.data.time} /> 
+          </div>
           <div className="col-3">
             Sunrise <strong>|</strong> Sunset
           </div>
           <div className="col-3">
             {" "}
-            <span>{props.data.sunrise}</span> <span class="divided">|</span>
-            <span> {props.data.sunset}</span>{" "}
+            <span><SunTime sunrise={props.data.sunrise} /></span> <span class="divided">|</span>
+            <span> <SunTime sunrise={props.data.sunset} /></span>{" "}
           </div>
         </div>
       </div>
