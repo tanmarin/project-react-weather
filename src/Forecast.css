@@ -1,6 +1,7 @@
 .Forecast h6 {
   color: #d84251;
   font-weight: bolder;
+  text-align: center;
 }
 
 .Forecast .forecast-five {
@@ -11,22 +12,12 @@
   padding-bottom: 25px;
 }
 
-.Forecast .five-days {
+.Forecast p {
+  margin-top: 8px;
   text-align: center;
-  background-image: linear-gradient(
-    to right,
-    rgb(247, 140, 160, 0.7) 0%,
-    rgb(249, 116, 143, 0.7) 19%,
-    rgb(253, 134, 140, 0.7) 60%,
-    rgb(254, 154, 139, 0.7) 100%
-  );
-  padding-top: 12px;
-  padding-bottom: 15px;
-  border: none;
-  border-radius: 0px 0px 10px 10px;
 }
 
-.Forecast span.five-icon {
-  font-size: 40px;
-  color: white;
+.Forecast canvas {
+  margin: 0 auto;
+  display: block;
 }

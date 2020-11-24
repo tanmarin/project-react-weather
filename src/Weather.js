@@ -4,6 +4,7 @@ import Temperature from "./Temperature";
 import FormattedDate from "./FormattedDate";
 import SunTime from "./SunTime";
 import WeatherIcon from "./WeatherIcon";
+import UnitChange from "./UnitChange";
 
 import "./Weather.css";
 
@@ -38,16 +39,8 @@ export default function Weather(props) {
             </div>
           </div>
           <div className="col-3">
-            <h2 className="current-temp">{props.data.temperature}</h2>
-            <p className="degree">
-              <a href="/" className="active degree-reading">
-                °C
-              </a>{" "}
-              |
-              <a href="/" className="active degree-reading">
-                °F
-              </a>
-            </p>
+            <UnitChange celsius={props.data.temperature} />
+            
           </div>
         </div>
         <h3>{props.data.description}</h3>

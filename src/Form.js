@@ -5,7 +5,7 @@ import axios from "axios";
 import Weather from "./Weather";
 import Images from "./Images";
 import Prediction from "./Prediction";
-import Forecast from "./Forecast";
+import WeatherForecast from "./WeatherForecast";
 
 import "./Form.css";
 
@@ -73,10 +73,10 @@ export default function Form(props){
         </div>
       </form>
       <Weather data={weatherData} />
-      <Images />
+      <Images temp={weatherData.temperature} />
       <Prediction info={weatherData} />
       <h5>Forecast</h5>
-      <Forecast />
+      <WeatherForecast city={weatherData.city} />
     </div>
     );
   } else {
@@ -89,6 +89,4 @@ export default function Form(props){
          timeout={0} 
       />;
   }
-  
-    
-  }  
+ }  
